@@ -1,0 +1,11 @@
+{
+  "version": "3",
+  "remote": {
+    "https://cdn.skypack.dev/-/preact-render-to-string@v5.1.12-bxVngfUvIHzdneYL1ENU/dist=es2019,mode=imports/optimized/preact-render-to-string.js": "4c39d922d84b828cd531e9ff8f48db9ee5aca58afac6b30d705a594037aee241",
+    "https://cdn.skypack.dev/-/preact@v10.9.0-sxzybx7sBosD3fXpfbt3/dist=es2019,mode=imports/optimized/preact.js": "e66dc0378907870a2230ec2e087214c1ec7678150220412f8438f918744b2ecc",
+    "https://cdn.skypack.dev/preact-render-to-string@v5.1.12": "efe649e5d99870f8cf2802857b16cf62a14ce799e3bc1ba9ea3e102efb218f58",
+    "https://esm.sh/preact@10.19.6/jsx-runtime": "f4c9e5f72ef18435eab846ae02e315a63da724f64fb08d806d2ddeaf08d99bd8",
+    "https://esm.sh/stable/preact@10.19.6/denonext/jsx-runtime.js": "97e9eeb40443de53a8cb3b70f264d04db2bbfc5c2298fdb15d1c471283ccd6aa",
+    "https://esm.sh/stable/preact@10.19.6/denonext/preact.mjs": "68491395d287895f4d697e403ded5b0ebb8fed0494f9e870c422bc017e5e52f5"
+  }
+}
