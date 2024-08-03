@@ -15,7 +15,7 @@ function NavLinks({ activePage }) {
     {
       name: "home",
       displayName: "Home",
-      href: "/home",
+      href: "/",
     },
     {
       name: "about",

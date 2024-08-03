@@ -1,8 +1,8 @@
 import Layout from "./Layout.tsx";
 
-export default function Index({ activePage }: { activePage: string }) {
+export default function Index() {
   return (
-    <Layout activePage={activePage}>
+    <Layout activePage="home">
       <div className="col-span-2 max-w-[600px]">
         <div className="flex flex-col items-center gap-x-10">
           <div className="avatar mb-6">
