@@ -10,7 +10,7 @@ export default function Index() {
               <img src="/profile-picture.webp" />
             </div>
           </div>
-          <h1 className="text-5xl font-bold">Ajesh Jhalli</h1>
+          <h1 className="text-4xl font-bold">Ajesh Jhalli</h1>
           <h2 className="text-2xl font-semibold mt-4 mb-8">
             Software Engineer
           </h2>
