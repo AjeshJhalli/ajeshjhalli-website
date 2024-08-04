@@ -15,7 +15,7 @@ export default function Layout({ children, activePage }: { children: any; active
       </head>
       <body className="flex flex-col bg-base-200 items-center" data-theme="cyberpunk">
         <Navbar activePage={activePage} />
-        <main className="h-full p-10 lg:p-20 max-w-[1000px]">
+        <main className="p-10 lg:p-20 max-w-[1000px]">
           {children}
         </main>
       </body>
