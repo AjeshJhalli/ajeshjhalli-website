@@ -1,4 +1,4 @@
-import Navbar from "./Navbar.jsx";
+import Navbar from "./Navbar.tsx";
 
 export default function Layout({ children, activePage }: { children: any; activePage: string }) {
   return (

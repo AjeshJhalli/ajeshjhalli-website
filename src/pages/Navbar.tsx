@@ -1,6 +1,6 @@
 import classNames from "https://deno.land/x/classnames@0.1.1/index.ts";
 
-export default function Navbar({ activePage }) {
+export default function Navbar({ activePage }: { activePage: string }) {
   return (
     <nav className="navbar">
       <ul className="menu menu-horizontal flex w-full justify-center">
@@ -10,7 +10,7 @@ export default function Navbar({ activePage }) {
   );
 }
 
-function NavLinks({ activePage }) {
+function NavLinks({ activePage }: { activePage: string }) {
   const links = [
     {
       name: "home",
