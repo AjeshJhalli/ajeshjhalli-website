@@ -13,7 +13,7 @@ export default function Layout({ children, activePage }: { children: any; active
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Ajesh Jhalli</title>
       </head>
-      <body className="flex flex-col bg-base-200 items-center" data-theme="cyberpunk">
+      <body className="flex flex-col bg-base-200 items-center" data-theme="">
         <Navbar activePage={activePage} />
         <main className="p-10 lg:p-20 max-w-[1000px]">
           {children}
