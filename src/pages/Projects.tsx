@@ -27,11 +27,11 @@ function PersonalProjects() {
           is better-suited for.
         </p>
         <div className="mt-4 flex gap-x-3">
-          <a className="btn btn-secondary" href="https://bigshelf.deno.dev">
+          <a className="btn btn-primary" href="https://bigshelf.deno.dev">
             Project Website
           </a>
           <a
-            className="btn btn-secondary"
+            className="btn btn-primary"
             href="https://github.com/AjeshJhalli/bigshelf"
           >
             Source Code

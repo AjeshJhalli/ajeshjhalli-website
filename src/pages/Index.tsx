@@ -74,7 +74,7 @@ function Socials() {
       </li>
       <li>
         <a
-          className="btn btn-secondary  "
+          className="btn btn-primary  "
           href="mailto:ajeshjhalli@gmail.com"
         >
           Contact Me

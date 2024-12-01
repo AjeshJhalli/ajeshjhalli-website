@@ -7,7 +7,7 @@ export default function Page404() {
         <p className="text-xl">
           The page you were looking for could not be found
         </p>
-        <a className="btn btn-secondary px-10" href="/">Go to home</a>
+        <a className="btn btn-primary px-10" href="/">Go to home</a>
       </div>
     </Layout>
   );
