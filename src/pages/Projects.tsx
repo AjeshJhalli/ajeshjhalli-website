@@ -18,7 +18,7 @@ function PersonalProjects() {
           Multi-tenant CRUD App
         </h1>
         <p>
-          Bigshelf is a multi-tenant CRUD app that stores customer information.
+          Room Flow is a multi-tenant CRUD app that stores customer information.
           It was developed using Deno.js, is hosted on Deno Deploy, and uses
           Azure AD B2C for authentication. It uses Deno KV as its database,
           which is a NoSQL key-value database built into the Deno runtime. It
