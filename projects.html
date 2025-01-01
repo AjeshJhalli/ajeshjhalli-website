@@ -83,7 +83,7 @@
             </p>
           </div>
           <div class="card-footer">
-            <a href="https://ajeshjhalli.co.uk" class="btn btn-primary"
+            <a href="/" class="btn btn-primary"
               >Website</a
             >
             <a
@@ -98,24 +98,43 @@
       <h2 class="mt-5 mb-4">Work Projects</h2>
       <div class="list-group">
         <div href="#" class="list-group-item flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Travel Agency ERP</h5>
-          </div>
+          <h5 class="mb-1">Travel Agency ERP</h5>
           <p class="mb-1">
-            I implemented several features for this system, including a GDS
-            booking import process which imports 100s of PNRs into the system
-            everyday.
+            I implemented several features for this system, including:
+            <ul>
+              <li>
+                A GDS booking import process which imports 100s of PNRs into the system everyday.
+              </li>
+              <li>
+                A export templating system, which allows custom exports to be created, with the selected styling and formatting options.
+              </li>
+              <li>
+                A webviewer component for displaying a list of rooms on a hotel booking, to replace an existing Claris FileMaker component which could no longer be used due to a critical bug.
+              </li>
+            </ul>
+            I am also responsible for monitoring the performance of this application in production, and investigating and fixing performance issues that are found. So far, I have improved around 5 processes in the system, which previously took over 20 seconds to execute and now take no more than a few seconds.
           </p>
         </div>
         <div href="#" class="list-group-item flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Interior Design Company ERP</h5>
-          </div>
+          <h5 class="mb-1">Interior Design Company ERP</h5>
           <p class="mb-1">
             I used the Xero API to integrate this system with the client's Xero
             tenant, allowing invoices to be automatically created from the ERP,
             and allowing the Xero invoice status to sync back into the ERP when
             the status is changed in Xero.
+          </p>
+        </div>
+        <div href="#" class="list-group-item flex-column align-items-start">
+          <h5 class="mb-1">Library Booking System & Xero Invoice Syncing System</h5>
+          <p class="mb-1">
+            I created a web-based booking system for a library using Next.js, which uploads the users' booking requests to the library's internal Claris FileMaker database. I also created
+            a Node API to sync contacts, quotes and invoices between the library's internal FileMaker database, and their Xero tenant, eliminating the need for manual data copying.
+          </p>
+        </div>
+        <div href="#" class="list-group-item flex-column align-items-start">
+          <h5 class="mb-1">Customer Invoice Dashboard</h5>
+          <p class="mb-1">
+            I developed an customer invoice dashboard using Next.js, which displays invoices retrieved from Azure Tables. Invoices from QuickBooks are synced to Azure Tables using QuickBooks webhooks and the QuickBooks API.
           </p>
         </div>
       </div>
