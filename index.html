@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
   <meta name="color-scheme" content="light dark">
   <meta charset="UTF-16">
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-  >
+  <link rel="stylesheet" href="/index.css">
   <title>Ajesh Jhalli</title>
-  <style>
-    body {
-      width: 90%;
-      max-width: 75ch;
-      margin: auto;
-    }
-  </style>
+  <meta name="description" content="Personal site of Ajesh Jhalli, software developer. Projects, technical interests, and links.">
 </head>
+
 <body>
   <header>
-     <nav>
+    <nav class="navbar">
       <ul>
         <li>
-          <a href="#about-me">About Me</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#personal-projects">Personal Projects</a>
+          <a href="/projects.html">Projects</a>
         </li>
         <li>
-          <a href="#work-projects">Work Projects</a>
+          <a href="/blog.html">Blog</a>
         </li>
         <li>
           <a href="https://github.com/AjeshJhalli">
@@ -40,109 +33,56 @@
             LinkedIn
           </a>
         </li>
-        <li>
-          <a>Blog (coming soon)</a>
-        </li>
       </ul>
     </nav>
-    <hr>
     <h1>Ajesh Jhalli</h1>
     <p>
       Hi, I'm Ajesh, a passionate software engineer specialising in web
       development and relational databases.
     </p>
-    <a href="mailto:ajeshjhalli@gmail.com" role="button">✉️ Contact Me</a>
+    <a href="mailto:ajeshjhalli@gmail.com" role="button" class="contact-me">✉️ Contact Me</a>
   </header>
-  <hr>
   <main>
     <section>
       <h2 id="about-me">About Me</h2>
-      <p>I build data-driven software systems that solve real-world business problems.</p>
+      <p>
+        I build data-driven software systems that solve real-world business
+        problems.
+      </p>
       <h3>Claris FileMaker</h3>
       <p>
-        Over the past 3+ years, I've worked extensively as a FileMaker developer, building and maintaining solutions across a range of industries, including:
-        <ul>
-          <li>Travel & touring</li>
-          <li>Interior design</li>
-          <li>Point-of-purchase display design</li>
-        </ul>
-        My work spans from feature development to debugging complex performance issues.
+        Over the past 4+ years, I've worked extensively as a FileMaker
+        developer, building and maintaining solutions across a range of
+        industries, including:
+      <ul>
+        <li>Travel & touring</li>
+        <li>Interior design</li>
+        <li>Point-of-purchase display design</li>
+      </ul>
+      My work spans from feature development to debugging complex
+      performance issues.
       </p>
       <h3>Microsoft Azure</h3>
       <p>
-        I've designed, built, and deployed multiple applications using Azure services such as:
-        <ul>
-          <li>App Services</li>
-          <li>Entra ID</li>
-          <li>Azure AD B2C</li>
-          <li>Storage Accounts</li>
-        </ul>
-        I've also automated critical business processes using custom PowerShell scripts.
+        I've designed, built, and deployed end-to-end solutions on Microsoft Azure,
+        leveraging a wide range of cloud services, including:
+
+      <ul>
+        <li>App Services for hosting scalable web applications</li>
+        <li>Entra ID for secure identity and access management</li>
+        <li>Azure AD B2C for customer authentication and user flows</li>
+        <li>Storage Accounts for reliable and cost-efficient data storage</li>
+      </ul>
+      I've also automated critical business processes using custom
+      PowerShell scripts.
       </p>
       <h3>Web Development</h3>
       <p>
-        I have built modern web portals and REST APIs using a mix of tools and technologies tailored to each project's needs.
+        I have built modern web portals and REST APIs using a mix of tools and
+        technologies tailored to each project's needs.
       </p>
     </section>
-    <section>
-
-    </section>
-    <h2 id="personal-projects">Personal Projects</h2>
-    <p>
-      <img src="code-cost-preview.png" alt="Screenshot of Code Cost web app" width="300" />
-      <h3>💻 Code Cost</h3>
-      <p>
-        A costing program for software development projects. It is built
-        with PHP, HTMX and SQLite.
-      </p>
-      <a href="https://codecost.net">Website</a>
-      <a href="https://github.com/AjeshJhalli/php-app">GitHub</a>
-    </p>
-    <p>
-      <img src="ajeshjhalli-preview.png" alt="Screenshot of Ajesh Jhalli website" width="300" />
-      <h3>🌐 ajeshjhalli.co.uk</h3>
-      <p>
-        The website you're viewing — built with raw HTML for simplicity and performance.
-      </p>
-      <a href="/" class="btn btn-primary">Website</a>
-      <a href="https://github.com/AjeshJhalli/ajeshjhalli-website">GitHub</a>
-    </p>
-    <h2 id="work-projects">Work Projects</h2>
-      <h3>✈️ Travel Agency ERP</h3>
-      <p>
-        Key contributions:
-        <ul>
-          <li>GDS Booking Import: Automated the import of hundreds of PNRs daily.</li>
-          <li>Custom Export Templates: Enabled dynamic report generation for tours with configurable styles.</li>
-          <li>Room Viewer Component: Replaced a broken FileMaker layout component with a robust web-based alternative.</li>
-          <li>Performance Optimization: Improved multiple slow-running processes, reducing execution time from 20+ seconds to just a few seconds.</li>
-        </ul>
-      </p>
-      <h3>🏠 Interior Design Company ERP</h3>
-      <p>
-        Integrated the system with Xero, allowing:
-        <ul>
-          <li>Auto-generation of invoices from the ERP</li>
-          <li>Real-time syncing of invoice statuses from Xero back to the ERP</li>
-        </ul>
-      </p>
-      <h3>📚 Library Booking System</h3>
-      <p>
-        <ul>
-          <li>Developed a web-based booking system using Next.js, which syncs bookings with a Claris FileMaker backend.</li>
-          <li>Built a Node.js API to sync contacts, quotes, and invoices between FileMaker and Xero — eliminating manual data entry.</li>
-        </ul>
-      </p>
-      <h3>💰 Customer Invoice Dashboard</h3>
-      <p>
-        <ul>
-          <li>Built a dashboard using Next.js to display invoices from Azure Table Storage.</li>
-          <li>Integrated with QuickBooks API to sync invoices using webhooks.</li>
-        </ul>
-      </p>
-    </p>
   </main>
-  <hr>
   <footer>
     <small>
       <p>© ajeshjhalli.co.uk. All rights reserved.</p>
@@ -160,4 +100,5 @@
     </small>
   </footer>
 </body>
+
 </html>
