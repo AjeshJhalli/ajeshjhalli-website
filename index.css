@@ -5,8 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  width: 90%;
-  max-width: 75ch;
+  width: min(90%, 75ch);
   margin: auto;
   background-color: #181818;
   font-family: palatino;
