@@ -1,107 +1,131 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <meta charset="UTF-16" />
+    <meta name="theme-color" content="#f4f1e9" />
     <link rel="stylesheet" href="/index.css" />
-    <title>Ajesh Jhalli</title>
+    <title>Ajesh Jhalli — Full-stack software engineer</title>
     <meta
       name="description"
-      content="Personal site of Ajesh Jhalli, software developer. Projects, technical interests, and links."
+      content="Personal site of Ajesh Jhalli, a full-stack software engineer working across web applications, databases, integrations, and business systems."
     />
     <meta name="author" content="Ajesh Jhalli" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Ajesh Jhalli, home">
+        <span class="brand-mark" aria-hidden="true">AJ</span>
+        <span>Ajesh Jhalli</span>
+      </a>
+      <nav class="navbar" aria-label="Main navigation">
         <ul>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/blog.html">Writing</a></li>
+          <li><a href="https://github.com/AjeshJhalli" rel="me">GitHub</a></li>
           <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/projects.html">Projects</a>
-          </li>
-          <!-- <li>
-            <a href="/blog.html">Blog</a>
-          </li> -->
-          <li>
-            <a href="https://github.com/AjeshJhalli" rel="me"> GitHub </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/"
-              rel="me"
+            <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me"
+              >LinkedIn</a
             >
-              LinkedIn
-            </a>
           </li>
         </ul>
       </nav>
-      <h1>Ajesh Jhalli</h1>
-      <p>Hi, I'm Ajesh, a full-stack software engineer.</p>
-      <a href="mailto:ajeshjhalli@gmail.com" class="contact-me" rel="me"
-        >✉️ Contact Me</a
-      >
     </header>
+
     <main>
-      <section>
-        <h2 id="about-me">About Me</h2>
-        <p>
-          My background includes extensive FileMaker development alongside
-          modern web technologies such as Next.js, Azure, and Supabase.
-        </p>
-        <p>
-          I've delivered bespoke solutions across multiple industries, with
-          significant experience building and maintaining travel management
-          systems, including areas such as GDS integrations and traveller
-          profile management.
-        </p>
-        <p>
-          <a href="/projects.html">Click here</a> to read about some of the
-          projects I've worked on.
-        </p>
-        <h2>Tech Stack</h2>
-        <p>
-          Here are some of the technologies I have worked with in real-world
-          projects so far:
-        </p>
-        <ul>
-          <li>Next.js</li>
-          <li>Supabase</li>
-          <li>Claris FileMaker</li>
-          <li>Node.js</li>
-          <li>Azure</li>
-          <li>Clerk</li>
-          <li>Xero API</li>
-        </ul>
-        <h2>Industries</h2>
-        <p>
-          And here are some of the industries I've built software solutions for:
-        </p>
-        <ul>
-          <li>Travel management</li>
-          <li>Touring</li>
-          <li>Interior design</li>
-          <li>Education</li>
-          <li>Point-of-purchase design</li>
-        </ul>
+      <section class="hero" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">Full-stack software engineer</p>
+          <h1 id="intro-title">Practical software, built around real work.</h1>
+          <p class="lede">
+            I'm Ajesh. I build web applications, integrations, and business
+            systems that make complicated processes simpler and more reliable.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="mailto:ajeshjhalli@gmail.com"
+              >Get in touch</a
+            >
+            <a class="button" href="/projects.html">View projects</a>
+          </div>
+        </div>
+
+        <aside class="at-a-glance" aria-label="At a glance">
+          <div class="glance-list">
+            <div>
+              <p class="glance-label">Focus</p>
+              <p class="glance-value">Web apps, databases &amp; integrations</p>
+            </div>
+            <div>
+              <p class="glance-label">Experience</p>
+              <p class="glance-value">Travel, interiors, education &amp; design</p>
+            </div>
+            <div>
+              <p class="glance-label">Based in</p>
+              <p class="glance-value">United Kingdom</p>
+            </div>
+          </div>
+        </aside>
       </section>
+
+      <div class="content-grid">
+        <section aria-labelledby="about-me">
+          <p class="eyebrow">About</p>
+          <h2 id="about-me">Engineering with context</h2>
+          <p>
+            My background combines extensive Claris FileMaker development with
+            modern web technologies including Next.js, Azure, and Supabase.
+          </p>
+          <p>
+            I've delivered bespoke solutions across several industries, with
+            particular experience in travel management systems, GDS
+            integrations, and traveller profile management.
+          </p>
+          <a class="text-link" href="/projects.html"
+            >Read about selected projects →</a
+          >
+        </section>
+
+        <div class="stack">
+          <section aria-labelledby="tech-stack">
+            <p class="eyebrow">Tools</p>
+            <h2 id="tech-stack">Tech stack</h2>
+            <ul class="tag-list">
+              <li>Next.js</li>
+              <li>Supabase</li>
+              <li>Claris FileMaker</li>
+              <li>Node.js</li>
+              <li>Azure</li>
+              <li>Clerk</li>
+              <li>Xero API</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="industries">
+            <p class="eyebrow">Experience</p>
+            <h2 id="industries">Industries</h2>
+            <ul class="plain-list">
+              <li>Travel management</li>
+              <li>Touring</li>
+              <li>Interior design</li>
+              <li>Education</li>
+              <li>Point-of-purchase design</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>© ajeshjhalli.co.uk. All rights reserved.</p>
-      <p>
-        <a href="mailto:ajeshjhalli@gmail.com" rel="me"
-          >ajeshjhalli@gmail.com</a
+
+    <footer class="site-footer">
+      <p>© Ajesh Jhalli</p>
+      <div class="footer-links">
+        <a href="mailto:ajeshjhalli@gmail.com" rel="me">Email</a>
+        <a href="https://github.com/AjeshJhalli" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me"
+          >LinkedIn</a
         >
-        |
-        <a href="https://github.com/AjeshJhalli" rel="me"> GitHub </a>
-        |
-        <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/">
-          LinkedIn
-        </a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>

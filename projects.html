@@ -1,132 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e9" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Projects — Ajesh Jhalli</title>
+    <meta
+      name="description"
+      content="Selected personal and professional software projects by Ajesh Jhalli."
+    />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta charset="UTF-16">
-  <link rel="stylesheet" href="/index.css">
-  <title>Ajesh Jhalli</title>
-  <meta name="description" content="Personal site of Ajesh Jhalli, software developer. Projects, technical interests, and links.">
-  <meta name="author" content="Ajesh Jhalli">
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/projects.html">Projects</a>
-        </li>
-        <!-- <li>
-          <a href="/blog.html">Blog</a>
-        </li> -->
-        <li>
-          <a href="https://github.com/AjeshJhalli" rel="me">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h1 id="personal-projects">Personal Projects</h1>
-      <p>
-        <img src="ajeshjhalli-preview.png" alt="Screenshot of Ajesh Jhalli website" width="300" />
-      <h2>🌐 ajeshjhalli.co.uk</h2>
-      <p>
-        The website you're viewing — built with raw HTML & CSS for simplicity and
-        performance.
-      </p>
-      <a href="/" class="btn btn-primary">Website</a>
-      <a href="https://github.com/AjeshJhalli/ajeshjhalli-website">GitHub</a>
-      </p>
-    </section>
-    <section>
-      <h1 id="work-projects">Work Projects</h1>
-      <h2>✈️ Travel Agency ERP</h2>
-      <p>
-        Key contributions:
-      <ul>
-        <li>
-          GDS Booking Import: Automated the import of hundreds of PNRs
-          daily.
-        </li>
-        <li>
-          Custom Export Templates: Enabled dynamic report generation for
-          tours with configurable styles.
-        </li>
-        <li>
-          Room Viewer Component: Replaced a broken FileMaker layout
-          component with a robust web-based alternative.
-        </li>
-        <li>
-          Performance Optimization: Improved multiple slow-running
-          processes, reducing execution time from 20+ seconds to just a few
-          seconds.
-        </li>
-      </ul>
-      </p>
-      <h2>🏠 Interior Design Company ERP</h2>
-      <p>
-        Integrated the system with Xero, allowing:
-      <ul>
-        <li>Auto-generation of invoices from the ERP</li>
-        <li>
-          Real-time syncing of invoice statuses from Xero back to the ERP
-        </li>
-      </ul>
-      </p>
-      <h2>📚 Library Booking System</h2>
-      <p>
-      <ul>
-        <li>
-          Developed a web-based booking system using Next.js, which syncs
-          bookings with a Claris FileMaker backend.
-        </li>
-        <li>
-          Built a Node.js API to sync contacts, quotes, and invoices between
-          FileMaker and Xero — eliminating manual data entry.
-        </li>
-      </ul>
-      </p>
-      <h2>💰 Customer Invoice Dashboard</h2>
-      <p>
-      <ul>
-        <li>
-          Built a dashboard using Next.js to display invoices from Azure
-          Table Storage.
-        </li>
-        <li>
-          Integrated with QuickBooks API to sync invoices using webhooks.
-        </li>
-      </ul>
-      </p>
-    </section>
-  </main>
-  <footer>
-    <p>© ajeshjhalli.co.uk. All rights reserved.</p>
-    <p>
-      <a href="mailto:ajeshjhalli@gmail.com" rel="me"
-        >ajeshjhalli@gmail.com</a
-      >
-      |
-      <a href="https://github.com/AjeshJhalli" rel="me"> GitHub </a>
-      |
-      <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/">
-        LinkedIn
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Ajesh Jhalli, home">
+        <span class="brand-mark" aria-hidden="true">AJ</span>
+        <span>Ajesh Jhalli</span>
       </a>
-    </p>
-  </footer>
-</body>
+      <nav class="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects.html" aria-current="page">Projects</a></li>
+          <li><a href="/blog.html">Writing</a></li>
+          <li><a href="https://github.com/AjeshJhalli" rel="me">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <header class="page-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h1>Projects</h1>
+        </div>
+        <p>
+          A selection of systems, integrations, and web applications I've
+          helped design and deliver.
+        </p>
+      </header>
+
+      <section class="project-group" aria-labelledby="personal-projects">
+        <h2 class="section-label" id="personal-projects">Personal</h2>
+        <div class="project-list">
+          <article class="project-card featured">
+            <img
+              src="/ajeshjhalli-preview.png"
+              alt="Preview of the previous Ajesh Jhalli website"
+              width="400"
+              height="209"
+            />
+            <div>
+              <p class="eyebrow">HTML &amp; CSS</p>
+              <h3>ajeshjhalli.co.uk</h3>
+              <p>
+                The website you're viewing, built with raw HTML and CSS for
+                simplicity, speed, and easy maintenance.
+              </p>
+              <div class="actions">
+                <a class="text-link" href="/">Visit website →</a>
+                <a
+                  class="text-link"
+                  href="https://github.com/AjeshJhalli/ajeshjhalli-website"
+                  >View source →</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-group" aria-labelledby="work-projects">
+        <h2 class="section-label" id="work-projects">Professional</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <p class="eyebrow">Travel</p>
+            <h3>Travel Agency ERP</h3>
+            <ul>
+              <li>Automated the import of hundreds of GDS bookings daily.</li>
+              <li>Built configurable report and export templates for tours.</li>
+              <li>Replaced a broken layout component with a robust web viewer.</li>
+              <li>Reduced slow processes from 20+ seconds to a few seconds.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <p class="eyebrow">Interior design</p>
+            <h3>ERP &amp; Xero integration</h3>
+            <ul>
+              <li>Automated invoice generation from the ERP.</li>
+              <li>Synced live invoice statuses from Xero back into the system.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <p class="eyebrow">Education</p>
+            <h3>Library Booking System</h3>
+            <ul>
+              <li>
+                Built a Next.js booking experience synced with a Claris
+                FileMaker backend.
+              </li>
+              <li>
+                Created a Node.js API to sync contacts, quotes, and invoices
+                between FileMaker and Xero.
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <p class="eyebrow">Finance</p>
+            <h3>Customer Invoice Dashboard</h3>
+            <ul>
+              <li>
+                Built a Next.js dashboard for invoices stored in Azure Table
+                Storage.
+              </li>
+              <li>Synced invoices with QuickBooks using webhooks.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Ajesh Jhalli</p>
+      <div class="footer-links">
+        <a href="mailto:ajeshjhalli@gmail.com" rel="me">Email</a>
+        <a href="https://github.com/AjeshJhalli" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
