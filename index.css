@@ -256,8 +256,7 @@ p {
 
 .plain-list,
 .tag-list,
-.project-list,
-.post-list {
+.project-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -342,8 +341,7 @@ p {
   gap: 14px;
 }
 
-.project-card,
-.post-card {
+.project-card {
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 5px;
@@ -473,73 +471,6 @@ p {
   font-weight: 650;
 }
 
-.post-list {
-  display: grid;
-  gap: 14px;
-}
-
-.post-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 28px;
-  align-items: center;
-}
-
-.post-card h2 {
-  margin-bottom: 7px;
-  font-size: 21px;
-}
-
-.post-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.article {
-  width: min(100%, 720px);
-  margin-inline: auto;
-}
-
-.article-header {
-  margin-bottom: 34px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--line);
-}
-
-.article-header h1 {
-  max-width: 20ch;
-  font-size: clamp(34px, 5vw, 46px);
-}
-
-.article-meta {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.article figure {
-  margin: 28px 0 34px;
-}
-
-.article figure img {
-  border: 1px solid var(--line);
-  border-radius: 5px;
-}
-
-.article figcaption {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.article h2 {
-  margin-top: 34px;
-}
-
-.article li + li {
-  margin-top: 10px;
-}
-
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -616,10 +547,8 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .post-card,
   .site-footer {
     align-items: flex-start;
-    grid-template-columns: 1fr;
     flex-direction: column;
   }
 }

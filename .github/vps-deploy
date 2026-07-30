@@ -1,0 +1,61 @@
+#!/bin/sh
+
+set -eu
+umask 022
+
+case "${SSH_ORIGINAL_COMMAND:-}" in
+  "deploy "*)
+    site_sha=${SSH_ORIGINAL_COMMAND#deploy }
+    ;;
+  *)
+    echo "This key can only deploy ajeshjhalli.co.uk." >&2
+    exit 1
+    ;;
+esac
+
+case "$site_sha" in
+  ""|*[!0-9a-f]*)
+    echo "Invalid release identifier." >&2
+    exit 1
+    ;;
+esac
+
+base="/usr/share/nginx"
+target="$base/ajeshjhalli"
+release="$base/.ajeshjhalli-release-$site_sha"
+backup="$base/.ajeshjhalli-backup-$site_sha"
+
+test "$(realpath "$base")" = "/usr/share/nginx"
+test -d "$target"
+test ! -e "$release"
+test ! -e "$backup"
+
+cleanup() {
+  if [ -d "$release" ]; then
+    rm -rf -- "$release"
+  fi
+}
+trap cleanup EXIT HUP INT TERM
+
+mkdir "$release"
+tar -xzf - -C "$release"
+
+test -f "$release/index.html"
+test -f "$release/index.css"
+test -f "$release/projects.html"
+test -f "$release/ajeshjhalli-preview.png"
+
+file_count=$(find "$release" -type f | wc -l)
+test "$file_count" -eq 4
+
+find "$release" -type d -exec chmod 755 {} +
+find "$release" -type f -exec chmod 644 {} +
+
+mv "$target" "$backup"
+if mv "$release" "$target"; then
+  rm -rf -- "$backup"
+  trap - EXIT HUP INT TERM
+else
+  mv "$backup" "$target"
+  exit 1
+fi
