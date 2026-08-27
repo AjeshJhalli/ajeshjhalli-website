@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Pull requests</title>
+    <meta name="description" content="A focused pull request list." />
+    <link rel="stylesheet" href="/pulls.css?v=3" />
+    <script src="/pulls.js?v=3" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <header class="page-header">
+        <div class="repository">sample-org / repository <span>Sample data</span></div>
+        <div class="title-line">
+          <h1>Pull requests</h1>
+          <p id="result-count" aria-live="polite">6 pull requests</p>
+        </div>
+      </header>
+
+      <section class="filters" aria-label="Filter and sort pull requests">
+        <label class="search-field">
+          <span>Search</span>
+          <input id="search" type="search" placeholder="Title, branch, person, or tag" autocomplete="off" />
+        </label>
+
+        <label>
+          <span>State</span>
+          <select id="state-filter">
+            <option value="all">All</option>
+            <option value="open">Open</option>
+            <option value="draft">Draft</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Review</span>
+          <select id="review-filter">
+            <option value="all">All</option>
+            <option value="approved">Approved</option>
+            <option value="pending">Pending</option>
+            <option value="changes">Changes requested</option>
+          </select>
+        </label>
+
+        <label>
+          <span>CI</span>
+          <select id="ci-filter">
+            <option value="all">All</option>
+            <option value="passed">Passed</option>
+            <option value="running">Running</option>
+            <option value="failed">Failed</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Merge</span>
+          <select id="merge-filter">
+            <option value="all">All</option>
+            <option value="clear">No conflicts</option>
+            <option value="conflict">Conflicts</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Sort</span>
+          <select id="sort">
+            <option value="updated">Recently updated</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="size">Largest diff</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="pull-list" aria-label="Pull requests">
+        <div class="list-header" aria-hidden="true">
+          <span>PR</span>
+          <span>Title</span>
+          <span>Branches</span>
+          <span>People</span>
+          <span>Status</span>
+          <span>Diff</span>
+        </div>
+
+        <div id="pull-rows">
+          <article
+            class="pull-row"
+            data-state="open"
+            data-review="pending"
+            data-ci="passed"
+            data-merge="clear"
+            data-created="6"
+            data-updated="1"
+            data-size="514"
+            data-search="add saved payment methods checkout feat saved cards main lisa jisoo jennie web payments"
+          >
+            <div class="pr-number">#842<small>12m ago</small></div>
+            <div class="pr-main">
+              <a href="#">Add saved payment methods to checkout</a>
+              <div class="tags"><span>web</span><span>payments</span></div>
+            </div>
+            <div class="branches"><code>feat/saved-cards</code><span>into</span><code>main</code></div>
+            <div class="people">
+              <div class="person"><span class="avatar lisa" aria-hidden="true">L</span><span><strong>Lisa</strong><small>Author</small></span></div>
+              <div class="person"><span class="avatar-stack"><span class="avatar jisoo" aria-hidden="true">JS</span><span class="avatar jennie" aria-hidden="true">JN</span></span><span><strong>Jisoo, Jennie</strong><small>Reviewers</small></span></div>
+            </div>
+            <div class="statuses"><span class="open">Open</span><span class="pending">1 of 2 approved</span><span class="passed">CI passed</span><span class="neutral">No conflicts</span></div>
+            <div class="diff"><strong>+428</strong><span>-86</span></div>
+          </article>
+
+          <article
+            class="pull-row"
+            data-state="open"
+            data-review="changes"
+            data-ci="failed"
+            data-merge="clear"
+            data-created="5"
+            data-updated="2"
+            data-size="255"
+            data-search="rate limiting middleware public api rate limit main jennie lisa rose platform breaking"
+          >
+            <div class="pr-number">#839<small>1h ago</small></div>
+            <div class="pr-main">
+              <a href="#">Rate limiting middleware for public API</a>
+              <div class="tags"><span>platform</span><span>breaking</span></div>
+            </div>
+            <div class="branches"><code>feat/rate-limit</code><span>into</span><code>main</code></div>
+            <div class="people">
+              <div class="person"><span class="avatar jennie" aria-hidden="true">JN</span><span><strong>Jennie</strong><small>Author</small></span></div>
+              <div class="person"><span class="avatar-stack"><span class="avatar lisa" aria-hidden="true">L</span><span class="avatar rose" aria-hidden="true">R</span></span><span><strong>Lisa, Rosé</strong><small>Reviewers</small></span></div>
+            </div>
+            <div class="statuses"><span class="open">Open</span><span class="problem">Changes requested</span><span class="problem">CI failed</span><span class="neutral">No conflicts</span></div>
+            <div class="diff"><strong>+214</strong><span>-41</span></div>
+          </article>
+
+          <article
+            class="pull-row"
+            data-state="draft"
+            data-review="pending"
+            data-ci="running"
+            data-merge="clear"
+            data-created="4"
+            data-updated="4"
+            data-size="109"
+            data-search="optimize reporting query indexes perf reporting main jisoo rose data performance"
+          >
+            <div class="pr-number">#837<small>4h ago</small></div>
+            <div class="pr-main">
+              <a href="#">Optimize reporting query indexes</a>
+              <div class="tags"><span>data</span><span>performance</span></div>
+            </div>
+            <div class="branches"><code>perf/reporting</code><span>into</span><code>main</code></div>
+            <div class="people">
+              <div class="person"><span class="avatar jisoo" aria-hidden="true">JS</span><span><strong>Jisoo</strong><small>Author</small></span></div>
+              <div class="person"><span class="avatar rose" aria-hidden="true">R</span><span><strong>Rosé</strong><small>Reviewer</small></span></div>
+            </div>
+            <div class="statuses"><span class="draft">Draft</span><span class="pending">Review pending</span><span class="pending">CI running</span><span class="neutral">No conflicts</span></div>
+            <div class="diff"><strong>+92</strong><span>-17</span></div>
+          </article>
+
+          <article
+            class="pull-row"
+            data-state="open"
+            data-review="approved"
+            data-ci="passed"
+            data-merge="clear"
+            data-created="3"
+            data-updated="3"
+            data-size="229"
+            data-search="improve keyboard navigation data grid a11y grid main rose lisa web accessibility"
+          >
+            <div class="pr-number">#831<small>Yesterday</small></div>
+            <div class="pr-main">
+              <a href="#">Improve keyboard navigation in data grid</a>
+              <div class="tags"><span>web</span><span>accessibility</span></div>
+            </div>
+            <div class="branches"><code>a11y/grid</code><span>into</span><code>main</code></div>
+            <div class="people">
+              <div class="person"><span class="avatar rose" aria-hidden="true">R</span><span><strong>Rosé</strong><small>Author</small></span></div>
+              <div class="person"><span class="avatar lisa" aria-hidden="true">L</span><span><strong>Lisa</strong><small>Reviewer</small></span></div>
+            </div>
+            <div class="statuses"><span class="open">Open</span><span class="passed">Approved</span><span class="passed">CI passed</span><span class="neutral">No conflicts</span></div>
+            <div class="diff"><strong>+176</strong><span>-53</span></div>
+          </article>
+
+          <article
+            class="pull-row"
+            data-state="open"
+            data-review="approved"
+            data-ci="passed"
+            data-merge="clear"
+            data-created="7"
+            data-updated="0"
+            data-size="150"
+            data-search="structured logging background jobs observability jobs main lisa jennie platform"
+          >
+            <div class="pr-number">#845<small>8m ago</small></div>
+            <div class="pr-main">
+              <a href="#">Structured logging for background jobs</a>
+              <div class="tags"><span>platform</span></div>
+            </div>
+            <div class="branches"><code>feat/job-logs</code><span>into</span><code>main</code></div>
+            <div class="people">
+              <div class="person"><span class="avatar lisa" aria-hidden="true">L</span><span><strong>Lisa</strong><small>Author</small></span></div>
+              <div class="person"><span class="avatar jennie" aria-hidden="true">JN</span><span><strong>Jennie</strong><small>Reviewer</small></span></div>
+            </div>
+            <div class="statuses"><span class="open">Open</span><span class="passed">Approved</span><span class="passed">CI passed</span><span class="neutral">No conflicts</span></div>
+            <div class="diff"><strong>+118</strong><span>-32</span></div>
+          </article>
+
+          <article
+            class="pull-row"
+            data-state="open"
+            data-review="approved"
+            data-ci="passed"
+            data-merge="conflict"
+            data-created="1"
+            data-updated="5"
+            data-size="305"
+            data-search="stream large csv exports data export main jennie jisoo"
+          >
+            <div class="pr-number">#826<small>2d ago</small></div>
+            <div class="pr-main">
+              <a href="#">Stream large CSV exports</a>
+              <div class="tags"><span>data</span></div>
+            </div>
+            <div class="branches"><code>feat/csv-stream</code><span>into</span><code>main</code></div>
+            <div class="people">
+              <div class="person"><span class="avatar jennie" aria-hidden="true">JN</span><span><strong>Jennie</strong><small>Author</small></span></div>
+              <div class="person"><span class="avatar jisoo" aria-hidden="true">JS</span><span><strong>Jisoo</strong><small>Reviewer</small></span></div>
+            </div>
+            <div class="statuses"><span class="open">Open</span><span class="passed">Approved</span><span class="passed">CI passed</span><span class="problem">Merge conflict</span></div>
+            <div class="diff"><strong>+201</strong><span>-104</span></div>
+          </article>
+        </div>
+
+        <div id="empty-state" hidden>No pull requests match these filters.</div>
+      </section>
+    </main>
+  </body>
+</html>

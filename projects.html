@@ -3,199 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f4f1e9" />
-    <link rel="stylesheet" href="/index.css?v=20260728" />
-    <title>Projects — Ajesh Jhalli</title>
-    <meta
-      name="description"
-      content="Selected personal and professional software projects by Ajesh Jhalli."
-    />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="/index.css?v=20260822" />
+    <title>Projects, Ajesh Jhalli</title>
+    <meta name="description" content="Selected software projects by Ajesh Jhalli." />
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Ajesh Jhalli, home">
-        <span class="brand-mark" aria-hidden="true">AJ</span>
-        <span>Ajesh Jhalli</span>
-      </a>
-      <nav class="navbar" aria-label="Main navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects.html" aria-current="page">Projects</a></li>
-          <li><a href="https://github.com/AjeshJhalli" rel="me">GitHub</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
+      <a class="site-name" href="/">Ajesh Jhalli</a>
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/projects.html" aria-current="page">Projects</a>
+        <a href="mailto:ajeshjhalli@gmail.com">Email</a>
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <header class="page-heading">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h1>Projects</h1>
-        </div>
-        <p>
-          A selection of systems, integrations, and web applications I've
-          helped design and deliver.
-        </p>
+        <p class="label">Selected work</p>
+        <h1>Projects</h1>
+        <p>Some of the systems and integrations I've designed and delivered.</p>
       </header>
 
-      <section class="project-group" aria-labelledby="personal-projects">
-        <h2 class="section-label" id="personal-projects">Personal</h2>
-        <div class="project-list">
-          <article class="project-card featured">
-            <div
-              class="atelier-preview"
-              role="img"
-              aria-label="Atelier dashboard showing project budget, scheme totals, and room progress"
-            >
-              <div class="atelier-preview-header">
-                <span>Rowan Mews</span>
-                <span class="atelier-status">In design</span>
-              </div>
-              <div class="atelier-metrics">
-                <div>
-                  <span>Budget</span>
-                  <strong>£42k</strong>
-                </div>
-                <div>
-                  <span>Schemes</span>
-                  <strong>£17.2k</strong>
-                </div>
-              </div>
-              <div class="atelier-room">
-                <span>Living room</span>
-                <span>£17.2k / £26k</span>
-              </div>
-              <div class="atelier-track">
-                <span style="width: 66%"></span>
-              </div>
-              <div class="atelier-room">
-                <span>Principal bedroom</span>
-                <span>Briefing</span>
-              </div>
-              <div class="atelier-track">
-                <span style="width: 8%"></span>
-              </div>
-            </div>
-            <div>
-              <p class="eyebrow">AI interfaces &amp; MCP</p>
-              <h3>Atelier interior-design planning</h3>
-              <p>
-                An exploration of allowing AI chats to interact with a web
-                application through safe, domain-level tools—and generate their
-                own user interfaces as interactive artifacts.
-              </p>
-              <ul>
-                <li>
-                  Exposes project rooms, schemes, budgets, totals, and comments
-                  through a customer-facing MCP server.
-                </li>
-                <li>
-                  Separates approval previews from explicit, idempotent
-                  commits.
-                </li>
-                <li>
-                  Turns live project data into purpose-built dashboards inside
-                  the conversation.
-                </li>
-              </ul>
-            </div>
-          </article>
+      <div class="project-list">
+        <article>
+          <h2>Travel management company ERP</h2>
+          <p>
+            A business system that imports hundreds of GDS bookings each day and
+            produces configurable tour reports and exports. Performance work cut
+            several processes from more than 20 seconds to a few seconds.
+          </p>
+        </article>
 
-          <article class="project-card featured">
-            <img
-              src="/ajeshjhalli-preview.png"
-              alt="Preview of the previous Ajesh Jhalli website"
-              width="400"
-              height="209"
-            />
-            <div>
-              <p class="eyebrow">HTML &amp; CSS</p>
-              <h3>ajeshjhalli.co.uk</h3>
-              <p>
-                The website you're viewing, built with raw HTML and CSS for
-                simplicity, speed, and easy maintenance.
-              </p>
-              <div class="actions">
-                <a class="text-link" href="/">Visit website →</a>
-                <a
-                  class="text-link"
-                  href="https://github.com/AjeshJhalli/ajeshjhalli-website"
-                  >View source →</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
+        <article>
+          <h2>ERP and Xero integration</h2>
+          <p>
+            An integration that creates invoices in Xero from an interior design ERP
+            and brings current invoice statuses back into the business system.
+          </p>
+        </article>
 
-      <section class="project-group" aria-labelledby="work-projects">
-        <h2 class="section-label" id="work-projects">Professional</h2>
-        <div class="project-list">
-          <article class="project-card">
-            <p class="eyebrow">Travel</p>
-            <h3>Travel Agency ERP</h3>
-            <ul>
-              <li>Automated the import of hundreds of GDS bookings daily.</li>
-              <li>Built configurable report and export templates for tours.</li>
-              <li>Replaced a broken layout component with a robust web viewer.</li>
-              <li>Reduced slow processes from 20+ seconds to a few seconds.</li>
-            </ul>
-          </article>
+        <article>
+          <h2>Library booking system</h2>
+          <p>
+            A Next.js booking flow connected to FileMaker, with contacts, quotes, and
+            invoices linked to Xero.
+          </p>
+        </article>
 
-          <article class="project-card">
-            <p class="eyebrow">Interior design</p>
-            <h3>ERP &amp; Xero integration</h3>
-            <ul>
-              <li>Automated invoice generation from the ERP.</li>
-              <li>Synced live invoice statuses from Xero back into the system.</li>
-            </ul>
-          </article>
+        <article>
+          <h2>Customer invoice dashboard</h2>
+          <p>
+            A Next.js dashboard backed by Azure Table Storage. QuickBooks webhooks keep
+            customer invoice data up to date.
+          </p>
+        </article>
 
-          <article class="project-card">
-            <p class="eyebrow">Education</p>
-            <h3>Library Booking System</h3>
-            <ul>
-              <li>
-                Built a Next.js booking experience synced with a Claris
-                FileMaker backend.
-              </li>
-              <li>
-                Created a Node.js API to sync contacts, quotes, and invoices
-                between FileMaker and Xero.
-              </li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <p class="eyebrow">Finance</p>
-            <h3>Customer Invoice Dashboard</h3>
-            <ul>
-              <li>
-                Built a Next.js dashboard for invoices stored in Azure Table
-                Storage.
-              </li>
-              <li>Synced invoices with QuickBooks using webhooks.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+        <article>
+          <h2>This website</h2>
+          <p>
+            A small static site built with HTML and CSS. No framework, build step, or
+            tracking scripts.
+          </p>
+          <p><a href="https://github.com/AjeshJhalli/ajeshjhalli-website">View the source on GitHub</a></p>
+        </article>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>© Ajesh Jhalli</p>
-      <div class="footer-links">
-        <a href="mailto:ajeshjhalli@gmail.com" rel="me">Email</a>
+    <footer>
+      <span>© 2026 Ajesh Jhalli</span>
+      <span class="footer-links">
         <a href="https://github.com/AjeshJhalli" rel="me">GitHub</a>
-        <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me"
-          >LinkedIn</a
-        >
-      </div>
+        <a href="https://www.linkedin.com/in/ajesh-jhalli-80b211215/" rel="me">LinkedIn</a>
+      </span>
     </footer>
   </body>
 </html>
